@@ -1,0 +1,20 @@
+Flutter Notes
+--------------
+
+Files Details
+--------------
+
+.idea folder
+Android Studion setting
+
+lib folder
+Contains all the widget folder.
+Contains code for the application.
+
+test folder
+Contains files which is used for testing the application.
+Writing test cases for running the application.
+
+pubspec folder
+It is used to add the depedency for the application.
+Gradle files and library needed for the applicatin.
