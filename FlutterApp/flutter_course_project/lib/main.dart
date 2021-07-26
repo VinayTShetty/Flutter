@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
-
-//void main() {  runApp(MyApp());}
-
-//Writing the function containing only one expression.
-
+/**
+ * Application removed blck background containing only White space.
+ */
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Text('Hello'),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('My Frist App'),
+        ),
+        body: Text('Hello World'),
+      ),
     );
   }
 }
