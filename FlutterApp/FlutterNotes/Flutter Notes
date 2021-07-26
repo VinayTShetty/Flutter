@@ -18,3 +18,6 @@ Writing test cases for running the application.
 pubspec folder
 It is used to add the depedency for the application.
 Gradle files and library needed for the applicatin.
+
+
+Every widget in flutter needs to extend StateWidget or StateLess widget.
