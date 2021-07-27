@@ -25,12 +25,23 @@ class DemoApp extends StatelessWidget {
 
       appBar: AppBar(title: Text('Demo another Widget'))      
       ,
-      body: Text('Demo Widget example')
-
+      body: Column(children:
+      [
+        
+          Text('Demo Question answered') ,
+          RaisedButton(child: Text('Question 1'),onPressed: null),
+          RaisedButton(child: Text('Question 2'),onPressed: null),
+          RaisedButton(child: Text('Question 3'),onPressed: null)
+      ])
+      
     )
     
     );
   }
 }
 
+
+/**
+ * To add Multiple button s in the Screen we need to use the column widget.
+ */
 
