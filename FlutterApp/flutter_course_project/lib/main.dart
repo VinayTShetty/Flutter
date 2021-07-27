@@ -20,28 +20,21 @@ class DemoApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+        home: Scaffold(
+            appBar: AppBar(title: Text('Demo another Widget')),
+            body: Column(children: [
+              Text('Demo Question answered'),
+              RaisedButton(child: Text('Question 1'), onPressed: answerQuestion),
+              RaisedButton(child: Text('Question 2'), onPressed: answerQuestion),
+              RaisedButton(child: Text('Question 3'), onPressed: answerQuestion)
+            ])));
+  }
 
-      home: Scaffold(
-
-      appBar: AppBar(title: Text('Demo another Widget'))      
-      ,
-      body: Column(children:
-      [
-        
-          Text('Demo Question answered') ,
-          RaisedButton(child: Text('Question 1'),onPressed: null),
-          RaisedButton(child: Text('Question 2'),onPressed: null),
-          RaisedButton(child: Text('Question 3'),onPressed: null)
-      ])
-      
-    )
-    
-    );
+  void answerQuestion() {
+    print('Button Clicked');
   }
 }
-
 
 /**
  * To add Multiple button s in the Screen we need to use the column widget.
  */
-
