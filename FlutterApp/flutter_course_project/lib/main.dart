@@ -24,9 +24,18 @@ class DemoApp extends StatelessWidget {
             appBar: AppBar(title: Text('Demo another Widget')),
             body: Column(children: [
               Text('Demo Question answered'),
-              RaisedButton(child: Text('Question 1'), onPressed: answerQuestion),
-              RaisedButton(child: Text('Question 2'), onPressed: answerQuestion),
-              RaisedButton(child: Text('Question 3'), onPressed: answerQuestion)
+              RaisedButton(
+                  child: Text('Question 1'), onPressed: answerQuestion),
+              RaisedButton(
+                  child: Text('Question 2'),
+                  onPressed: () {
+                    print('Mutliple Function 1');
+                    print('Mutliple Function 2');
+                    print('Mutliple Function 3');
+                  }),
+              RaisedButton(
+                  child: Text('Question 3'),
+                  onPressed: () => print('Arrow Function'))
             ])));
   }
 
