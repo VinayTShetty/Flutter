@@ -18,12 +18,13 @@ class MyApp extends StatelessWidget {
 class DemoApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var question = ['which is your favorite dish','what s your favorite Sports'];
     // TODO: implement build
     return MaterialApp(
         home: Scaffold(
-            appBar: AppBar(title: Text('Demo another Widget')),
+            appBar: AppBar(title: Text(' Demo Flutter Application ')),
             body: Column(children: [
-              Text('Demo Question answered'),
+              Text(question.elementAt(0)),
               RaisedButton(
                   child: Text('Question 1'), onPressed: answerQuestion),
               RaisedButton(
