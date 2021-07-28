@@ -15,16 +15,29 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class DemoApp extends StatelessWidget {
+class DemoApp extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    return _UiAppState();
+  }
+}
+
+class _UiAppState extends State<DemoApp> {
   @override
   Widget build(BuildContext context) {
-    var question = ['which is your favorite dish','what s your favorite Sports'];
+    var question = [
+      'which is your favorite dish',
+      'what s your favorite Sports',
+      'what s your favorite hobby',
+      'what s your favorite book',
+    ];
     // TODO: implement build
     return MaterialApp(
         home: Scaffold(
             appBar: AppBar(title: Text(' Demo Flutter Application ')),
             body: Column(children: [
-              Text(question.elementAt(0)),
+              Text(question[questionIndex]),
               RaisedButton(
                   child: Text('Question 1'), onPressed: answerQuestion),
               RaisedButton(
@@ -40,7 +53,12 @@ class DemoApp extends StatelessWidget {
             ])));
   }
 
+  var questionIndex = 0;
   void answerQuestion() {
+    setState(() {
+      questionIndex = 0;
+      questionIndex = questionIndex + 1;
+    });
     print('Button Clicked');
   }
 }

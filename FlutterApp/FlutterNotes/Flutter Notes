@@ -21,3 +21,7 @@ Gradle files and library needed for the applicatin.
 
 
 Every widget in flutter needs to extend StateWidget or StateLess widget.
+
+setState
+---------
+This function will call the build method once again.
