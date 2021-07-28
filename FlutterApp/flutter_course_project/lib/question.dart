@@ -8,6 +8,10 @@ class Question extends StatelessWidget {
   Question(this.questionText);
   @override
   Widget build(BuildContext context) {
-    return Text(questionText);
+    return Text(questionText,
+        style: TextStyle(fontSize: 18), textAlign: TextAlign.center);
   }
 }
+/**
+ * Using this propert will not  align the text in the center.
+ */
