@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import './question.dart';
 /**
  * Application removed blck background containing only White space.
  */
@@ -37,7 +37,7 @@ class _UiAppState extends State<DemoApp> {
         home: Scaffold(
             appBar: AppBar(title: Text(' Demo Flutter Application ')),
             body: Column(children: [
-              Text(question[questionIndex]),
+              Question(question[questionIndex]),
               RaisedButton(
                   child: Text('Question 1'), onPressed: answerQuestion),
               RaisedButton(

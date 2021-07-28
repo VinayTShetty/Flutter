@@ -25,3 +25,9 @@ Every widget in flutter needs to extend StateWidget or StateLess widget.
 setState
 ---------
 This function will call the build method once again.
+
+
+Design Rule
+------------
+There should be only one widget per file.
+
