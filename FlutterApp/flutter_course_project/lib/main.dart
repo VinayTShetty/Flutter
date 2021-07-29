@@ -38,19 +38,12 @@ class _UiAppState extends State<DemoApp> {
             appBar: AppBar(title: Text(' Demo Flutter Application ')),
             body: Column(children: [
               Question(question[questionIndex]),
-              RaisedButton(
-                  child: Text('Question 1'), onPressed: answerQuestion),
-              RaisedButton(
-                  child: Text('Question 2'),
-                  onPressed: () {
-                    print('Mutliple Function 1');
-                    print('Mutliple Function 2');
-                    print('Mutliple Function 3');
-                  }),
-              RaisedButton(
-                  child: Text('Question 3'),
-                  onPressed: () => print('Arrow Function'))
-            ])));
+              RaisedButton(child: Text('Question 1'), onPressed: answerQuestion),
+              RaisedButton(child: Text('Question 2'),onPressed: () {print('Mutliple Function 1');print('Mutliple Function 2');print('Mutliple Function 3');}),
+              RaisedButton(child: Text('Question 3'),onPressed: () => print('Arrow Function'))
+              ])
+              )
+              );
   }
 
   var questionIndex = 0;
