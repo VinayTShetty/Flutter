@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import './question.dart';
+import './answer.dart';
+
 /**
  * Application removed blck background containing only White space.
  */
@@ -38,16 +40,14 @@ class _UiAppState extends State<DemoApp> {
             appBar: AppBar(title: Text(' Demo Flutter Application ')),
             body: Column(children: [
               Question(question[questionIndex]),
-              RaisedButton(child: Text('Question 1'), onPressed: answerQuestion),
-              RaisedButton(child: Text('Question 2'),onPressed: () {print('Mutliple Function 1');print('Mutliple Function 2');print('Mutliple Function 3');}),
-              RaisedButton(child: Text('Question 3'),onPressed: () => print('Arrow Function'))
-              ])
-              )
-              );
+              Answer(_answerQuestion),
+              Answer(_answerQuestion),
+              Answer(_answerQuestion)
+            ])));
   }
 
   var questionIndex = 0;
-  void answerQuestion() {
+  void _answerQuestion() {
     setState(() {
       questionIndex = 0;
       questionIndex = questionIndex + 1;
