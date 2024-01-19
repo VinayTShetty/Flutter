@@ -1,0 +1,7 @@
+How to Create a Stateless Widget.
+
+1)Create a class that extends StatelessWidget.
+2)Overide build method that returns a widget.
+
+StatelssWidget will not change the UI.
+StatelssWidget are immutable, meaning that their properties (data) cannot be changed once they are instantiated.
