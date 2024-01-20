@@ -1,0 +1,20 @@
+StateFull Widget.
+
+How to Create a StateFull Widget.
+********************************
+
+1)Create a class that extend StateFullWidget.
+2)Overide CreateState() method and return the instance of the state class.
+
+3) To Create a instance of the state class that extends state
+
+Points
+*****
+StateFull Widgets are mutable by nature and by using setState(){},The UI can be Re-Build.
+
+DisAdvangtages
+***************
+
+Entire UI Widget will be Re-Build , When using setState().
+Which is Resource Consumption is more.
+
