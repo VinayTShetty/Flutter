@@ -1,0 +1,10 @@
+How to create Provider.
+
+1)Add dependency in pubsec.yaml file.
+2)Create a class that has business logic use 'with' for changeNotifier.
+3)Use 'notifylistner' where the business logic is implemented in the provider class.
+
+
+Disdavatage
+***********
+Consumer:- Without Consumer implementation the entire widget will rebuild in Provider.
