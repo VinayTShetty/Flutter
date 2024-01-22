@@ -1,0 +1,8 @@
+Need of Provider
+***************
+
+In this example ,We can see 'Widget Built' log is getting executed mulitple times.
+This is very costly , if there are mulitple widget.
+
+
+For this scenario , we need to go for Provider.
