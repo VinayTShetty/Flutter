@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:fluttertutorials/provider/Counter_Provider.dart';
@@ -10,6 +12,19 @@ class CounterScreen extends StatefulWidget {
 }
 
 class _State extends State<CounterScreen> {
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    /**
+     * the listner should be set to false,bcoz the init method will be called before the buid() method.
+     */
+    final countprovider = Provider.of<CountProvider>(context, listen: false);
+    Timer.periodic(Duration(seconds: 0), (timer) {
+      countprovider.setCounter();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     print("Build Widget");

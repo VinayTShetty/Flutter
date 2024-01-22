@@ -11,3 +11,5 @@ Consumer:- Without Consumer implementation the entire widget will rebuild in Pro
 
 This disadvantage is avoided with the implementation of the consumer.
 With the implementation of Consumer,only the required widget will ReBuild.
+
+In this example only the required Text Widget is build.
