@@ -8,3 +8,6 @@ How to create Provider.
 Disdavatage
 ***********
 Consumer:- Without Consumer implementation the entire widget will rebuild in Provider.
+
+This disadvantage is avoided with the implementation of the consumer.
+With the implementation of Consumer,only the required widget will ReBuild.
