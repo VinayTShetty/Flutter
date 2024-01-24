@@ -1,0 +1,5 @@
+Value Notifier
+**************
+StateManagement can be achieved by using ValueNotifier.
+
+Without stateless widget/Provider/BLOC we can achieve stateManagement i.e via ValueNotifier
